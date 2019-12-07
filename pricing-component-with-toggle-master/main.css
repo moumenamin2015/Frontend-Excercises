@@ -1,0 +1,72 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: hsl(240, 78%, 98%);
+}
+h1,h2,h4{
+    color: hsl(232, 13%, 33%);
+}
+p{
+    color:hsl(233, 13%, 49%)
+}
+input, button{
+    font-family: inherit;
+    font-weight: inherit;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+.card{
+    float: left;
+    background-color:white;
+    width: 28%;
+    padding: 1.3rem;
+    border-radius: 8px;
+    margin:0.3%
+}
+.active{
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    min-height: 400px;
+    border-radius: 10px;
+}
+.active p{
+    color: white;
+}
+.active h2{
+    color:white;
+}
+.active h4{
+    color:white;
+}
+
+.card-title{
+    text-align: center;
+}
+.card-price{
+    text-align: center;
+}
+.card-specs{
+    text-align: center;
+}
+.card button{
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    border:none;
+    margin-top: 2rem;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    text-transform: uppercase;
+    color: white;
+}
+
+.active button{
+    background-image:none;
+    background-color:white;
+    color: hsl(233, 13%, 49%);
+}

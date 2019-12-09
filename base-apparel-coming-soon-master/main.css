@@ -1,0 +1,52 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+input {
+  font-family: inherit;
+  font-size: inherit;
+  width: 50%;
+  border: 2px solid hsla(0, 36%, 70%, 0.5);
+  padding: 1.2rem 2rem;
+  border-radius: 3rem;
+  background: #fff;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-image: url(images/bg-pattern-desktop.svg);
+}
+
+.left {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  width: 55%;
+}
+.right {
+  width: 45%;
+}
+.right img {
+  width: 100%;
+  height: 100%;
+}
+.comming-soon {
+  margin-top: 6rem;
+}
+.reddesh {
+  color: hsl(0, 36%, 70%);
+}
+.comming-soon {
+  font-size: 7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 16px;
+  margin-bottom: 5px;
+}
+p.description {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: hsl(0, 36%, 70%);
+}

@@ -59,5 +59,73 @@ header .right img {
   background-color: hsl(322, 100%, 66%);
   color: white;
   font-weight: 400;
+}
+.free-medium {
+  width: 50%;
+}
+.container {
   width: 80%;
+  margin: 10rem auto;
+}
+.card .left {
+  float: left;
+}
+.card .right {
+  float: right;
+}
+.card div.left {
+  margin-left: 7rem;
+}
+.card div.right {
+  margin-right: 3rem;
+}
+.card {
+  border-radius: 15px;
+  box-shadow: -1px 0px 20px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: auto;
+  margin-bottom: 2rem;
+}
+.card-text {
+  width: 45%;
+  margin-top: 8rem;
+}
+.card-image {
+  width: 35%;
+  margin: 3rem;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+}
+.card-title {
+  color: hsl(192, 100%, 9%);
+  font-size: 1.8rem;
+}
+.card-desc {
+  color: hsl(208, 11%, 55%);
+}
+.card-large {
+  height: 420px;
+}
+.ready {
+  width: 60%;
+  margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.ready .ready-title {
+  width: 70%;
+  margin: auto;
+}
+.ready .try-button {
+  width: 25%;
+  margin: auto;
+}
+.ready h1 {
+  color: hsl(192, 100%, 9%);
+}
+footer {
+  padding: 3rem 3rem;
+  height: 500px;
+  background-color: hsl(192, 100%, 9%);
 }

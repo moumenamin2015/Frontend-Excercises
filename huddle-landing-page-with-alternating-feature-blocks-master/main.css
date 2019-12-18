@@ -112,6 +112,9 @@ header .right img {
   margin: auto;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+  background-color: white;
 }
 .ready .ready-title {
   width: 70%;
@@ -124,8 +127,11 @@ header .right img {
 .ready h1 {
   color: hsl(192, 100%, 9%);
 }
-footer {
+.footer {
   padding: 3rem 3rem;
   height: 500px;
   background-color: hsl(192, 100%, 9%);
+  position: relative;
+  z-index: 1;
+  margin-top: -100px;
 }

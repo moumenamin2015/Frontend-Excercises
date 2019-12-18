@@ -121,17 +121,78 @@ header .right img {
   margin: auto;
 }
 .ready .try-button {
-  width: 25%;
+  width: 50%;
   margin: auto;
 }
 .ready h1 {
   color: hsl(192, 100%, 9%);
 }
+.try-button button {
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
 .footer {
-  padding: 3rem 3rem;
+  padding: 12rem 6rem;
   height: 500px;
   background-color: hsl(192, 100%, 9%);
   position: relative;
   z-index: 1;
   margin-top: -100px;
+}
+
+.logo {
+  margin-bottom: 3rem;
+}
+.contact-info {
+  width: 35%;
+  color: hsla(0, 0%, 100%, 0.8);
+  font-weight: 400;
+  float: left;
+  margin: 0 5%;
+  margin-left: 0;
+}
+.contact-info div {
+  margin-bottom: 1rem;
+}
+.contact-info p {
+  margin-left: 1rem;
+  display: inline;
+}
+.fa-ul {
+  margin-top: 0;
+}
+.fa-ul > li {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.links {
+  float: left;
+  width: 25%;
+  margin: 0 5%;
+}
+.links a {
+  margin-bottom: 1rem;
+}
+.links .left {
+  float: left;
+}
+.links .right {
+  float: right;
+}
+.links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+.social {
+  float: left;
+  color: white;
+  width: 10%;
+  margin: 0 5%;
+}
+.social a {
+  color: white;
+  text-decoration: none;
+  width: 30%;
 }

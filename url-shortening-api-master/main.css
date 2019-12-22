@@ -37,13 +37,13 @@ input {
   margin-top: 10px;
 }
 .right-nav .anchor-link {
-  margin-top: 10px;
   margin-right: 20px;
 }
 .right-nav {
-  width: 16%;
+  width: 20%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .btn {
   padding: 0.7rem 1rem;
@@ -58,6 +58,7 @@ input {
   background-color: hsl(180, 66%, 49%);
   font-weight: 600;
   font-size: 0.9rem;
+  width: 50%;
 }
 .btn-login {
   background-color: none;

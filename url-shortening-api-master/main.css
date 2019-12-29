@@ -27,6 +27,7 @@ input {
 .logo {
   margin-right: 2rem;
 }
+
 .anchor-link {
   text-decoration: none;
   color: hsl(0, 0%, 75%);
@@ -34,7 +35,8 @@ input {
 }
 .links .anchor-link {
   margin: 1rem;
-  margin-top: 10px;
+  margin-top: 0;
+  color: hsl(0, 0%, 75%);
 }
 .right-nav .anchor-link {
   margin-right: 20px;
@@ -103,7 +105,7 @@ input {
   display: flex;
   justify-content: space-between;
   padding: 3rem;
-  border-radius: 20px;
+  border-radius: 10px;
   background-image: url(images/bg-shorten-desktop.svg);
   background-color: hsl(257, 27%, 26%);
   position: relative;
@@ -134,9 +136,6 @@ input {
   justify-content: center;
 }
 .stats {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   margin-bottom: 100px;
 }
 .stats-cards {
@@ -144,7 +143,12 @@ input {
   z-index: 2;
   align-items: flex-start;
 }
-
+.stats-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 .stats-intro h2 {
   color: rgb(0, 0, 0, 0.8);
   font-size: 1.9rem;
@@ -152,6 +156,10 @@ input {
 .stats-intro p {
   color: hsl(0, 0%, 75%);
   font-weight: 600;
+  color: hsl(0, 0%, 75%);
+  font-weight: 600;
+  width: 65%;
+  margin: 0;
 }
 .card {
   margin: 1rem;

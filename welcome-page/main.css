@@ -6,7 +6,8 @@ body {
   font-size: 16px;
 }
 .welcome {
-  margin-bottom: 100px;
+  margin: 3rem;
+  position: relative;
 }
 .welcome h1 {
   text-align: center;
@@ -88,11 +89,21 @@ body {
 }
 .form .icon {
   position: absolute;
-  top: -46px;
+  top: -40px;
   font-size: 70px;
   color: red;
-  left: 341px;
+  left: 336px;
 }
 .form button {
   width: 40%;
+}
+.recommendations {
+  margin-top: 3rem;
+}
+.recommendations span {
+  border: 2px solid lightskyblue;
+  margin: 3px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: lightgray;
 }

@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins";
+  font-size: 16px;
+  margin: 0;
+  background-color: hsl(0, 0%, 98%);
+}
+header {
+  text-align: center;
+  margin-top: 6rem;
+}
+h1 {
+  color: hsl(0, 0%, 35%);
+  margin-top: 0;
+}
+h1.light {
+  margin-bottom: 0;
+  font-weight: 200;
+}
+
+header p {
+  color: hsl(0, 0%, 70%);
+  width: 40%;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.card-container {
+  flex: 1;
+  margin: 15px;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  box-shadow: -1px 0px 20px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+}
+.card img {
+  align-self: flex-end;
+}
+.card p {
+  color: hsl(0, 0%, 70%);
+}
+.card h2 {
+  color: hsl(0, 0%, 35%);
+}
+.card::before {
+  position: absolute;
+  content: "";
+  border-bottom: 20px solid black;
+  display: block;
+  width: 98%;
+  top: -4px;
+  left: 1%;
+  z-index: -1;
+  border-radius: 10px;
+}
+.card.red::before {
+  border-bottom: 20px solid hsl(0, 78%, 62%);
+}
+.card.cyan::before {
+  border-bottom: 20px solid hsl(180, 62%, 55%);
+}
+.card.orange::before {
+  border-bottom: 20px solid hsl(34, 97%, 64%);
+}
+.card.blue::before {
+  border-bottom: 20px solid hsl(212, 86%, 64%);
+}

@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "poppins";
   font-size: 16px;
@@ -79,4 +80,31 @@ header p {
 }
 .card.blue::before {
   border-bottom: 20px solid hsl(212, 86%, 64%);
+}
+
+@media only screen and (max-width: 992px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .card-container {
+    margin: 15px;
+    width: 100%;
+  }
+  header h1 {
+    color: hsl(0, 0%, 35%);
+    margin-top: 0;
+    font-size: 7vw;
+    margin: auto 0;
+  }
+  header p {
+    color: hsl(0, 0%, 70%);
+    width: 100%;
+    margin: auto;
+    font-size: 4vw;
+  }
 }

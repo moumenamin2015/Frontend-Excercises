@@ -78,3 +78,26 @@ body {
   padding: 2rem;
   border-bottom-right-radius: 10px;
 }
+@media only screen and (max-width: 992px) {
+  .container {
+    height: auto;
+    margin-top: 1rem;
+  }
+  .price {
+    width: 80%;
+  }
+  .bottom {
+    position: relative;
+    top: -20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  .subscription {
+    border-bottom-left-radius: 0px;
+  }
+  .why-us {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}

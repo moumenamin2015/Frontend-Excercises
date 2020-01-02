@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla";
+  font-size: 16px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+.price {
+  width: 50%;
+  border-radius: 20px;
+}
+.join {
+  background-color: white;
+  padding: 2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.join h2 {
+  color: hsl(179, 62%, 43%);
+}
+.join h3 {
+  color: hsl(71, 73%, 54%);
+}
+.join p {
+  color: hsl(218, 22%, 67%);
+}
+.bottom {
+  position: relative;
+  top: -20px;
+  display: flex;
+  flex: 1;
+  color: white;
+}
+.subscription {
+  flex: 1;
+  background-color: hsl(179, 62%, 43%);
+  padding: 2rem;
+  border-bottom-left-radius: 10px;
+}
+.subscription p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.subscription span {
+  font-size: 1rem;
+  color: hsl(204, 43%, 93%, 0.4);
+}
+.subscription .desc {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.subscription button {
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.why-us {
+  flex: 1;
+  background-color: hsl(179, 62%, 43%, 0.8);
+  padding: 2rem;
+  border-bottom-right-radius: 10px;
+}

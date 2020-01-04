@@ -4,10 +4,19 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 40px;
 }
 .calculator {
   width: 40%;
   margin: auto;
+}
+.calc-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  border: 1px solid black;
+  font-size: 40px;
 }
 .row {
   display: flex;
@@ -15,12 +24,6 @@ body {
 }
 .col {
   width: 100%;
-  background-color: gray;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
 }
 .col:hover {
   background-color: lightgray;
@@ -39,7 +42,7 @@ body {
 }
 .result {
   background-color: black;
-  justify-content: flex-end;
+  text-align: right;
   color: white;
 }
 .operator {

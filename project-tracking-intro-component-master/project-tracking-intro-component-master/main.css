@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow";
+  font-size: 18px;
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: absolute;
+  background-color: hsl(207, 33%, 95%);
+  width: 50%;
+  left: 50%;
+  min-height: 400px;
+  z-index: -1;
+  border-bottom-left-radius: 50px;
+}
+.flex-container {
+  display: flex;
+}
+.jc-sp-between {
+  justify-content: space-between;
+}
+header {
+  width: 80%;
+  margin: auto;
+  min-height: 75px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+header ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+header ul li a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.login li a {
+  color: hsl(230, 11%, 40%);
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 6rem;
+}
+.intro {
+  width: 45%;
+  margin-right: 5%;
+}
+.intro h4 {
+  color: hsl(230, 11%, 40%);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 16px;
+}
+.intro span.new {
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  letter-spacing: 0px;
+}
+.intro h1 {
+  font-family: "Barlow Condensed";
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.intro h3 {
+  width: 70%;
+  color: hsl(230, 11%, 40%);
+}
+.intro button {
+  background-color: hsl(0, 100%, 68%);
+  text-transform: uppercase;
+  font-family: "Barlow Condensed";
+  font-weight: 700;
+  width: 30%;
+  margin-right: 1rem;
+}
+.intro button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 100%, 75%);
+}
+.intro span.preview {
+  color: hsl(230, 11%, 40%);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn {
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+.illustration {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+}
+.illustration img {
+  position: absolute;
+  top: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .container.flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

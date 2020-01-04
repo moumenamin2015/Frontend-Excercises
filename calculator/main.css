@@ -17,6 +17,7 @@ body {
   background-color: gray;
   border: 1px solid black;
   font-size: 40px;
+  cursor: pointer;
 }
 .row {
   display: flex;

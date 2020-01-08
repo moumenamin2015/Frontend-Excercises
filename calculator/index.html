@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-  </head>
-  <body>
-    <div class="calculator">
-      <div class="row">
-        <div class="result col">124+25</div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="row">
+      <div class="result col"></div>
+    </div>
+    <div class="row">
+      <div class="col col-50 calc-button">C</div>
+      <div class="col col-25 calc-button">
+        <i class="fa fa-arrow-left"></i>
       </div>
-      <div class="row">
-        <div class="col col-50 calc-button">C</div>
-        <div class="col col-25 calc-button">
-          <i class="fa fa-arrow-left"></i>
-        </div>
-        <div class="col col-25 calc-button operator">
-          <i class="fa fa-divide"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-25 calc-button">7</div>
-        <div class="col col-25 calc-button">8</div>
-        <div class="col col-25 calc-button">9</div>
-        <div class="col col-25 calc-button operator">
-          <i class="fas fa-times"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-25 calc-button">4</div>
-        <div class="col col-25 calc-button">5</div>
-        <div class="col col-25 calc-button">6</div>
-        <div class="col col-25 calc-button operator">
-          <i class="fas fa-minus"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-25 calc-button">1</div>
-        <div class="col col-25 calc-button">2</div>
-        <div class="col col-25 calc-button">3</div>
-        <div class="col col-25 calc-button operator">
-          <i class="fas fa-plus"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-75 calc-button">0</div>
-        <div class="col col-25 calc-button operator">
-          <i class="fas fa-equals"></i>
-        </div>
+      <div class="col col-25 calc-button operator" data-operation="/">
+        <i class="fa fa-divide"></i>
       </div>
     </div>
-  </body>
+    <div class="row">
+      <div class="col col-25 calc-button">7</div>
+      <div class="col col-25 calc-button">8</div>
+      <div class="col col-25 calc-button">9</div>
+      <div class="col col-25 calc-button operator" data-operation="*">
+        <i class="fas fa-times" data-operation="*"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-25 calc-button">4</div>
+      <div class="col col-25 calc-button">5</div>
+      <div class="col col-25 calc-button">6</div>
+      <div class="col col-25 calc-button operator" data-operation="-">
+        <i class="fas fa-minus" data-operation="-"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-25 calc-button">1</div>
+      <div class="col col-25 calc-button">2</div>
+      <div class="col col-25 calc-button">3</div>
+      <div class="col col-25 calc-button operator" data-operation="+">
+        <i class="fas fa-plus" data-operation="+"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-75 calc-button">0</div>
+      <div class="col col-25 calc-button operator" data-operation="=">
+        <i class="fas fa-equals" data-operation="="></i>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

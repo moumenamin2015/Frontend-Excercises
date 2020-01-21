@@ -2,11 +2,4 @@
 <ul class="heroes">
   <li *ngFor="let hero of heroes" (click)="onSelect(hero)"><span class="badge">{{hero.id}}</span> {{hero.name}}</li>
 </ul>
-
-<div *ngIf="selectedHero">
-  <h2>{{selectedHero.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedHero.id}}</div>
-  <label for="">name: </label>
-  <input [(ngModel)]="selectedHero.name" placeholder="name" />
-  <button (click)="updateSelectedHero()">Update Name</button>
-</div>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>

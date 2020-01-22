@@ -13,4 +13,8 @@ export class HeroService {
     this.MessageService.add("Fetching heroes..");
     return of(HEROES);
   }
+  getHeroById(id: number) {
+    this.MessageService.add("Fetching hero with id" + id);
+    return of(HEROES.find(h => h.id === id));
+  }
 }

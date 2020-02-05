@@ -13,17 +13,19 @@ export class AppComponent implements OnInit {
   constructor(private countryService: CountryService) {}
   ngOnInit(): void {
     this.countryService.getCountries().subscribe(response => {
-      console.log(response);
-      this.countries = response;
-      // this.countries = response.map(item => {
-      //   return new country(
-      //     item.name,
-      //     item.flag,
-      //     item.population,
-      //     item.capital,
-      //     item.region
-      //   );
-      // });
+      //console.log(response);
+      //this.countries = response;
+      this.countries = response.map(item => {
+        let mapped = new country(
+          item.name,
+          item.flag,
+          item.population,
+          item.capital,
+          item.region
+        );
+        console.log(mapped);
+        return mapped;
+      });
       console.log(this.countries);
     });
   }

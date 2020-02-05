@@ -12,7 +12,7 @@
     </div>
   </div>
   <div class="countries">
-    <div class="country-card">
+    <!-- <div class="country-card">
       <div class="flag">
         <img src="https://restcountries.eu/data/deu.svg" alt="" />
       </div>
@@ -54,6 +54,28 @@
         <p><span class="bold">Population: </span>81770900</p>
         <p><span class="bold">Region: </span>Europe</p>
         <p><span class="bold">Capital: </span>Berlin</p>
+      </div>
+    </div>
+    <div class="country-card">
+      <div class="flag">
+        <img src="https://restcountries.eu/data/deu.svg" alt="" />
+      </div>
+      <div class="country-info">
+        <h3>Germany</h3>
+        <p><span class="bold">Population: </span>81770900</p>
+        <p><span class="bold">Region: </span>Europe</p>
+        <p><span class="bold">Capital: </span>Berlin</p>
+      </div>
+    </div> -->
+    <div *ngFor="let country of countries" class="country-card">
+      <div class="flag">
+        <img [src]="country.flag" alt="" />
+      </div>
+      <div class="country-info">
+        <h3>{{ country.name }}</h3>
+        <p><span class="bold">Population: </span>{{ country.population }}</p>
+        <p><span class="bold">Region: </span>{{ country.region }}</p>
+        <p><span class="bold">Capital: </span>{{ country.capital }}</p>
       </div>
     </div>
   </div>

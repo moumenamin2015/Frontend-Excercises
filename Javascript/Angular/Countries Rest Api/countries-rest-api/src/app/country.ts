@@ -8,7 +8,7 @@ export class country {
     this.name = name;
     this.flag = flag;
     this.population = population;
-    this.capital == capital;
+    this.capital = capital;
     this.region = region;
   }
 }

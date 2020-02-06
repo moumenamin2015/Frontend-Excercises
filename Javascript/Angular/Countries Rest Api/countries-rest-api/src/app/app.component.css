@@ -15,11 +15,12 @@
   position: relative;
 }
 .filters .text-wrapper::after {
-  font-family: "FontAwesome";
+  font-family: "Font Awesome\ 5 Free";
   content: "\f002";
   position: absolute;
   left: 20px;
   top: 15px;
+  font-weight: 900;
 }
 .text-wrapper input[type="text"] {
   height: 50px;
@@ -58,6 +59,9 @@
   width: 21%;
   background-color: white;
   margin: 10px 0;
+}
+.flag {
+  height: 170px;
 }
 .flag img {
   width: 100%;

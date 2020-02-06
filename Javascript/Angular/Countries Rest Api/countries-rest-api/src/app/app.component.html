@@ -1,7 +1,8 @@
 <div class="container">
   <div class="filters">
     <div class="text-wrapper">
-      <input type="text" placeholder="Search for a country..." />
+      <input #searchCountries type="text" placeholder="Search for a country..."
+        (keyup)="filterCountries(searchCountries.value)" />
     </div>
     <div class="drp-wrapper">
       <select name="region" id="region">
@@ -12,61 +13,6 @@
     </div>
   </div>
   <div class="countries">
-    <!-- <div class="country-card">
-      <div class="flag">
-        <img src="https://restcountries.eu/data/deu.svg" alt="" />
-      </div>
-      <div class="country-info">
-        <h3>Germany</h3>
-        <p><span class="bold">Population: </span>81770900</p>
-        <p><span class="bold">Region: </span>Europe</p>
-        <p><span class="bold">Capital: </span>Berlin</p>
-      </div>
-    </div>
-    <div class="country-card">
-      <div class="flag">
-        <img src="https://restcountries.eu/data/deu.svg" alt="" />
-      </div>
-      <div class="country-info">
-        <h3>Germany</h3>
-        <p><span class="bold">Population: </span>81770900</p>
-        <p><span class="bold">Region: </span>Europe</p>
-        <p><span class="bold">Capital: </span>Berlin</p>
-      </div>
-    </div>
-    <div class="country-card">
-      <div class="flag">
-        <img src="https://restcountries.eu/data/deu.svg" alt="" />
-      </div>
-      <div class="country-info">
-        <h3>Germany</h3>
-        <p><span class="bold">Population: </span>81770900</p>
-        <p><span class="bold">Region: </span>Europe</p>
-        <p><span class="bold">Capital: </span>Berlin</p>
-      </div>
-    </div>
-    <div class="country-card">
-      <div class="flag">
-        <img src="https://restcountries.eu/data/deu.svg" alt="" />
-      </div>
-      <div class="country-info">
-        <h3>Germany</h3>
-        <p><span class="bold">Population: </span>81770900</p>
-        <p><span class="bold">Region: </span>Europe</p>
-        <p><span class="bold">Capital: </span>Berlin</p>
-      </div>
-    </div>
-    <div class="country-card">
-      <div class="flag">
-        <img src="https://restcountries.eu/data/deu.svg" alt="" />
-      </div>
-      <div class="country-info">
-        <h3>Germany</h3>
-        <p><span class="bold">Population: </span>81770900</p>
-        <p><span class="bold">Region: </span>Europe</p>
-        <p><span class="bold">Capital: </span>Berlin</p>
-      </div>
-    </div> -->
     <div *ngFor="let country of countries" class="country-card">
       <div class="flag">
         <img [src]="country.flag" alt="" />

@@ -10,23 +10,33 @@ import { country } from "./country";
 export class AppComponent implements OnInit {
   title = "countries-rest-api";
   countries: country[];
+  allCountries: country[];
   constructor(private countryService: CountryService) {}
   ngOnInit(): void {
+    this.getCountries();
+  }
+  getCountries() {
     this.countryService.getCountries().subscribe(response => {
-      //console.log(response);
-      //this.countries = response;
       this.countries = response.map(item => {
-        let mapped = new country(
+        return new country(
           item.name,
           item.flag,
           item.population,
           item.capital,
           item.region
         );
-        console.log(mapped);
-        return mapped;
       });
+      this.allCountries = this.countries;
       console.log(this.countries);
     });
+  }
+  filterCountries(searchText: string) {
+    if (searchText) {
+      this.countries = this.allCountries.filter(country =>
+        country.name.toLowerCase().includes(searchText.toLowerCase())
+      );
+    } else {
+      this.countries = this.allCountries;
+    }
   }
 }

@@ -31,14 +31,17 @@ export class AppComponent implements OnInit {
       console.log(this.countries);
     });
   }
-  filterCountries(searchText: string) {
-    if (searchText) {
-      this.countries = this.allCountries.filter(country =>
-        country.name.toLowerCase().includes(searchText.toLowerCase())
+  filterCountries(searchText: string = "", region: string = "") {
+    this.countries = this.allCountries
+      .filter(
+        country =>
+          searchText === "" ||
+          country.name.toLowerCase().includes(searchText.toLowerCase())
+      )
+      .filter(
+        country =>
+          region === "" || country.region.toLowerCase() === region.toLowerCase()
       );
-    } else {
-      this.countries = this.allCountries;
-    }
   }
   details(countryName: string) {
     this.router.navigate(["/details", countryName]);

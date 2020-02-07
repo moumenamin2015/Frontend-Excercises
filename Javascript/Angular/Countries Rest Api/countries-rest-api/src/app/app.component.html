@@ -2,14 +2,14 @@
   <div class="filters">
     <div class="text-wrapper">
       <input #searchCountries type="text" placeholder="Search for a country..."
-        (keyup)="filterCountries(searchCountries.value)" />
+        (keyup)="filterCountries(searchCountries.value,region.value)" />
     </div>
     <div class="drp-wrapper">
-      <select name="region" id="region">
+      <select name="region" id="region" #region (change)="filterCountries(searchCountries.value,region.value)">
         <option value="">All</option>
         <option value="europe">Europe</option>
-        <option value="europe">Africa</option>
-        <option value="europe">Asia</option>
+        <option value="africa">Africa</option>
+        <option value="asia">Asia</option>
       </select>
     </div>
   </div>

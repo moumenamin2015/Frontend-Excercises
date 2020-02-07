@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { CountryService } from "./country.service";
 import { country } from "./country";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-root",
@@ -11,7 +12,7 @@ export class AppComponent implements OnInit {
   title = "countries-rest-api";
   countries: country[];
   allCountries: country[];
-  constructor(private countryService: CountryService) {}
+  constructor(private countryService: CountryService, private router: Router) {}
   ngOnInit(): void {
     this.getCountries();
   }
@@ -38,5 +39,8 @@ export class AppComponent implements OnInit {
     } else {
       this.countries = this.allCountries;
     }
+  }
+  details(countryName: string) {
+    this.router.navigate(["/details", countryName]);
   }
 }

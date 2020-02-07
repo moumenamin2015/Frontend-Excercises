@@ -13,4 +13,9 @@ export class CountryService {
   getCountries(): Observable<country[]> {
     return this.http.get<country[]>(this.baseApiUrl + "rest/v2/all");
   }
+  getCountryByName(countryName: string): Observable<country[]> {
+    return this.http.get<country[]>(
+      this.baseApiUrl + `rest/v2/name/${countryName}?fullText=True`
+    );
+  }
 }

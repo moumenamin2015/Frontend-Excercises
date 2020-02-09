@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { country } from "../country";
 import { CountryService } from "../country.service";
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
   selector: "app-country-details",
@@ -12,7 +12,8 @@ export class CountryDetailsComponent implements OnInit {
   country: country;
   constructor(
     private countryService: CountryService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -24,5 +25,8 @@ export class CountryDetailsComponent implements OnInit {
       this.country = response[0];
       console.log(this.country);
     });
+  }
+  goBack() {
+    this.router.navigate(["/countries"]);
   }
 }

@@ -1,0 +1,33 @@
+.country-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 600px;
+  min-height: 400px;
+}
+.country-name {
+  margin-bottom: 1rem;
+}
+.country-flag {
+  width: 40%;
+}
+.country-info {
+  width: 50%;
+}
+.country-flag img {
+  width: 100%;
+  height: 100%;
+}
+.country-details p {
+  font-weight: 300;
+  color: hsl(0, 0%, 20%);
+}
+.row {
+  display: flex;
+}
+.row p {
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;  
+}

@@ -13,7 +13,7 @@ export class CountryDetailsComponent implements OnInit {
   constructor(
     private countryService: CountryService,
     private route: ActivatedRoute,
-    private router: Router
+    public router: Router
   ) {}
 
   ngOnInit() {
@@ -25,6 +25,12 @@ export class CountryDetailsComponent implements OnInit {
       this.country = response[0];
       console.log(this.country);
     });
+  }
+  getCountryCurrencies() {
+    return this.country.currencies.map(c => c.name + " " + c.symbol);
+  }
+  getCountryLanguages() {
+    return this.country.languages.map(l => l.name + " " + l.nativeName);
   }
   goBack() {
     this.router.navigate(["/countries"]);

@@ -1,2 +1,30 @@
 <button (click)="goBack()" class="back">Back</button>
-<p *ngIf="country">{{ country.name }}</p>
+
+<div class="country-details" *ngIf="country">
+  <div class="country-flag">
+    <img [src]="country.flag" alt="country flag" />
+  </div>
+  <div class="country-info">
+    <h2 class="country-name">{{ country.name }}</h2>
+    <div class="row">
+      <p><span class="bold">Native Name:</span> {{ country.nativeName }}</p>
+      <p>
+        <span class="bold">Top Level Domain:</span> {{ country.topLevelDomain }}
+      </p>
+    </div>
+    <div class="row">
+      <p><span class="bold">Population:</span> {{ country.population }}</p>
+      <p><span class="bold">Currencies: </span>{{ getCountryCurrencies() }}</p>
+    </div>
+    <div class="row">
+      <p><span class="bold">Region:</span> {{ country.region }}</p>
+      <p><span class="bold">Languages:</span> {{ getCountryLanguages() }}</p>
+    </div>
+    <div class="row">
+      <p><span class="bold">Sub Region:</span> {{ country.subregion }}</p>
+    </div>
+    <div class="row">
+      <p><span class="bold">Capital:</span> {{ country.capital }}</p>
+    </div>
+  </div>
+</div>

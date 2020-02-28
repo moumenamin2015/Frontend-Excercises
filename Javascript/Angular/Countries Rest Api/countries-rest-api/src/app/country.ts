@@ -7,8 +7,8 @@ export class country {
   nativeName: string;
   subregion: string;
   topLevelDomain: string[];
-  currencies: string[];
-  languages: string[];
+  currencies: object[];
+  languages: object[];
   constructor(name, flag, population, capital, region) {
     this.name = name;
     this.flag = flag;

@@ -27,10 +27,10 @@ export class CountryDetailsComponent implements OnInit {
     });
   }
   getCountryCurrencies() {
-    return this.country.currencies.map(c => c.name + " " + c.symbol);
+    return this.country.currencies.map(c => c["name"] + " " + c["symbol"]);
   }
   getCountryLanguages() {
-    return this.country.languages.map(l => l.name + " " + l.nativeName);
+    return this.country.languages.map(l => l["name"] + " " + l["nativeName"]);
   }
   goBack() {
     this.router.navigate(["/countries"]);

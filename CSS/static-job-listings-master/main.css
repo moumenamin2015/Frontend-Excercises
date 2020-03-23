@@ -3,12 +3,12 @@
 }
 html {
   font-size: 16px;
-  font-family: "Spartan";
 }
 body {
   margin: 0;
   padding: 0;
   background-color: hsl(180, 52%, 96%);
+  font-family: "Spartan";
 }
 header {
   background-image: url("images/bg-header-desktop.svg");
@@ -99,22 +99,22 @@ header {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .job-desc ul {
-    width: 90%;
+  html {
+    font-size: 10px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .job-desc ul {
-    width: 60%;
+  html {
+    font-size: 12px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .job-desc ul {
-    width: 40%;
+  html {
+    font-size: 14px;
   }
 }
 
@@ -138,9 +138,6 @@ header {
     border-bottom: 1px solid gray;
     margin-bottom: 15px;
   }
-  .job-title {
-    font-size: 0.9rem;
-  }
   .company-image {
     position: absolute;
     top: -30px;
@@ -155,7 +152,13 @@ header {
     display: flex;
     flex-wrap: wrap;
   }
+  .job-desc ul {
+    width: 15rem;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .job-desc ul {
+    width: 90%;
+  }
 }

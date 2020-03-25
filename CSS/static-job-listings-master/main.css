@@ -75,16 +75,16 @@ header {
 .job-title {
   margin: 1rem 0px;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 .job-desc ul {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   margin: 0;
   padding: 0;
   color: hsl(180, 8%, 52%);
-  width: 90%;
+  width: 80%;
 }
 .job-desc ul > li:nth-of-type(1) {
   list-style: none;
@@ -159,6 +159,6 @@ header {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .job-desc ul {
-    width: 90%;
+    width: 80%;
   }
 }

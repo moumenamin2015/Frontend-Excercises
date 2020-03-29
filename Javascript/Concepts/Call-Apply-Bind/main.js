@@ -5,14 +5,7 @@ var person = {
     return this.firstname + " " + this.lastname;
   }
 };
-/////////////IIFE////////////////
-for (var index = 0; index < 3; index++) {
-  (function(i) {
-    setTimeout(function() {
-      console.log(i);
-    }, 3000);
-  })(index);
-}
+
 /////////// Bind - Call - Apply ///////////
 (function(lang1, lang2) {
   console.log("Logged: " + this.getFullName());

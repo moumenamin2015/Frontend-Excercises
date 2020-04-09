@@ -1,0 +1,114 @@
+@import "./resets";
+@import "./variables";
+
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+body {
+  background-color: $White;
+  font-size: $FontSize;
+  font-family: $FontFamily;
+}
+.topPattern {
+  position: absolute;
+  width: 100%;
+  min-height: 40vh;
+  background-color: $VeryPaleBlue;
+  z-index: -1;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+header {
+  margin-bottom: 2rem;
+  h1 {
+    color: $VeryDarkBlue;
+  }
+  h3 {
+    color: $DarkGrayishBlue;
+  }
+}
+.social-cards {
+  @include flex(row, center, space-between);
+  .card {
+    @include flex(column, center, center);
+    width: 23%;
+    background-color: $LightGrayishBlue;
+    height: 220px;
+    border-radius: 5px;
+    border-top: 4px solid;
+    .account-info {
+      @include flex(row, center, center);
+      min-height: 20px;
+      .account-name {
+        color: $DarkGrayishBlue;
+        margin: 0 10px;
+        font-weight: 700;
+        font-size: 12px;
+      }
+    }
+    .account-followers {
+      margin: 15px;
+      @include flex(column, center, center);
+      p.count {
+        font-size: 60px;
+        font-weight: 700;
+      }
+      p.title {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $DarkGrayishBlue;
+      }
+    }
+    .up {
+      @include flex(row, center, center);
+      color: $LimeGreen;
+      font-weight: 700;
+      span {
+        margin: 0 5px;
+      }
+    }
+    .down {
+      @extend .up;
+      color: $BrightRed;
+    }
+    &.facebook {
+      border-color: $Facebook;
+    }
+    &.twitter {
+      border-color: $Twitter;
+    }
+    &.instagram {
+      position: relative;
+      border: none;
+      height: 215px;
+      &:after {
+        position: absolute;
+        content: "";
+        width: 98%;
+        height: 10px;
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#fdc468),
+          to(#df4996)
+        );
+        background: linear-gradient(to right, #fdc468, #df4996);
+        top: -4px;
+        left: 1%;
+        z-index: -1;
+        border-radius: 5px;
+      }
+    }
+    &.youtube {
+      border-color: $Youtube;
+    }
+  }
+}

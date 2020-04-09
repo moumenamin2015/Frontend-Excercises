@@ -1,87 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title>Frontend Mentor | Social Media Dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topPattern"></div>
+    <div class="container">
+      <header>
+        <h1>Social Media Dashboard</h1>
+        <h3>Total Followers: 23,004</h3>
+      </header>
+      <div class="social-cards">
+        <div class="card facebook">
+          <div class="account-info">
+            <span><img src="images/icon-facebook.svg" alt="facebook"/></span>
+            <span class="account-name">@nathanf</span>
+          </div>
+          <div class="account-followers">
+            <p class="count">1987</p>
+            <p class="title">Followers</p>
+          </div>
+          <div class="up">
+            <img src="images/icon-up.svg" alt="up" />
+            <span>12 Today</span>
+          </div>
+        </div>
+        <div class="card twitter">
+          <div class="account-info">
+            <span><img src="images/icon-twitter.svg" alt="twitter"/></span>
+            <span class="account-name">@nathanf</span>
+          </div>
+          <div class="account-followers">
+            <p class="count">1044</p>
+            <p class="title">Followers</p>
+          </div>
+          <div class="up">
+            <img src="images/icon-up.svg" alt="up" />
+            <span>99 Today</span>
+          </div>
+        </div>
+        <div class="card instagram">
+          <div class="account-info">
+            <span><img src="images/icon-instagram.svg" alt="instagram"/></span>
+            <span class="account-name">@realnathanf</span>
+          </div>
+          <div class="account-followers">
+            <p class="count">11k</p>
+            <p class="title">Followers</p>
+          </div>
+          <div class="up">
+            <img src="images/icon-up.svg" alt="up" />
+            <span>1099 Today</span>
+          </div>
+        </div>
+        <div class="card youtube">
+          <div class="account-info">
+            <span><img src="images/icon-youtube.svg" alt="youtube"/></span>
+            <span class="account-name">Nathan F.</span>
+          </div>
+          <div class="account-followers">
+            <p class="count">8239</p>
+            <p class="title">Subscribers</p>
+          </div>
+          <div class="up">
+            <img src="images/icon-down.svg" alt="up" />
+            <span>144 Today</span>
+          </div>
+        </div>
+    </div>
+    Dark Mode @nathanf 1987 Followers 12 Today @nathanf 1044 Followers 99 Today
+    @realnathanf 11k Followers 1099 Today Nathan F. 8239 Subscribers 144 Today
+    Overview - Today Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views
+    52k 1375% Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407
+    12%
 
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>

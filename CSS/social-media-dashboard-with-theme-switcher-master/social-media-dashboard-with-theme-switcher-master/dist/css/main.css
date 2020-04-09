@@ -1,0 +1,191 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+span {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body {
+  background-color: white;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.topPattern {
+  position: absolute;
+  width: 100%;
+  min-height: 40vh;
+  background-color: #f5f7ff;
+  z-index: -1;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: #1e202a;
+}
+
+header h3 {
+  color: #63687e;
+}
+
+.social-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.social-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 23%;
+  background-color: #f0f2fa;
+  height: 220px;
+  border-radius: 5px;
+  border-top: 4px solid;
+}
+
+.social-cards .card .account-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 20px;
+}
+
+.social-cards .card .account-info .account-name {
+  color: #63687e;
+  margin: 0 10px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.social-cards .card .account-followers {
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social-cards .card .account-followers p.count {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.social-cards .card .account-followers p.title {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #63687e;
+}
+
+.social-cards .card .up, .social-cards .card .down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #1db489;
+  font-weight: 700;
+}
+
+.social-cards .card .up span, .social-cards .card .down span {
+  margin: 0 5px;
+}
+
+.social-cards .card .down {
+  color: #dc414c;
+}
+
+.social-cards .card.facebook {
+  border-color: deepskyblue;
+}
+
+.social-cards .card.twitter {
+  border-color: #1ca0f2;
+}
+
+.social-cards .card.instagram {
+  position: relative;
+  border: none;
+  height: 215px;
+}
+
+.social-cards .card.instagram:after {
+  position: absolute;
+  content: "";
+  width: 98%;
+  height: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(to right, #fdc468, #df4996);
+  top: -4px;
+  left: 1%;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.social-cards .card.youtube {
+  border-color: #c4032a;
+}
+/*# sourceMappingURL=main.css.map */

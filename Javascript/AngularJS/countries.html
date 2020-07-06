@@ -1,0 +1,16 @@
+sdasdasdasdas
+<!-- <script
+  type="text/javascript-lazy"
+  src="CountriesComponent/countries-list.component.js"
+></script> -->
+<script>
+  LoadJS = function (src) {
+    var jsLink = $("<script type='text/javascript' src='" + src + "'>");
+    $("head").append(jsLink);
+  };
+  LoadJS("CountriesComponent/countries-list.component.js");
+  alert("script loaded");
+</script>
+<div>
+  <countries-list></countries-list>
+</div>

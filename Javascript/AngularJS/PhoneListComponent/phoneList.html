@@ -1,0 +1,15 @@
+<ul>
+  <li ng-repeat="phone in vm.phones">
+    <span>{{phone.name}}</span>
+    <p>{{phone.snippet}}</p>
+  </li>
+</ul>
+
+<h1>Add phone</h1>
+<div>
+  <label for="">Phone Name:</label>
+  <input type="text" ng-model="vm.model.phoneName" />
+  <label>Phone Snippet:</label>
+  <input type="text" ng-model="vm.model.phoneSnippet" />
+  <button ng-click="vm.AddPhone()">Add Phone</button>
+</div>

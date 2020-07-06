@@ -4,9 +4,9 @@ import { Hero } from "./heroes/hero";
 import { HEROES } from "./mock-heroes";
 import { of, Observable } from "rxjs";
 
-@Injectable({
-  providedIn: "root"
-})
+// @Injectable({
+//   providedIn: "root"
+// })
 export class HeroService {
   constructor(private MessageService: MessageService) {}
   getHeroes(): Observable<Hero[]> {

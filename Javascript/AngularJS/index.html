@@ -1,0 +1,36 @@
+<html ng-app="phonecatApp">
+  <head>
+    ...
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="PhoneListComponent/phone-list.component.js"></script>
+    <script src="srv_Countries.js"></script>
+    <script src="angular-loadscript.js"></script>
+    <!-- <script src="CountriesComponent/countries-list.component.js"></script> -->
+  </head>
+  <body ng-controller="MyCtrl">
+    <!-- Use a custom component to render a list of phones -->
+    <label for="">show phone component</label>
+    <input type="checkbox" ng-model="showPhoneComponent" />
+    <label for="">show countries-list component</label>
+    <input type="checkbox" ng-model="showCountriesComponent" />
+    <div ng-if="showPhoneComponent">
+      <phone-list ng-model="phoneData"></phone-list>
+    </div>
+    <div ng-if="showCountriesComponent">
+      <!-- <script
+        type="text/javascript-lazy"
+        src="CountriesComponent/countries-list.component.js"
+      ></script>
+      <script>
+        LoadJS = function (src) {
+          var jsLink = $("<script type='text/javascript' src='" + src + "'>");
+          $("head").append(jsLink);
+        };
+        LoadJS("CountriesComponent/countries-list.component.js");
+      </script> -->
+      <div ng-include="'countries.html'" id="countries"></div>
+    </div>
+  </body>
+</html>

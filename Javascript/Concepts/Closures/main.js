@@ -63,3 +63,13 @@ function logIndex(index) {
     console.log(index);
   }, 3000);
 }
+
+for (var i = 0; i < 4; i++) {
+  setTimeOut(
+    (function(j) {
+      console.log(j);
+    })(i),
+    0
+  );
+}
+console.log(i);
